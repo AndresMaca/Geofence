@@ -6,4 +6,10 @@
     <string name="geofence_too_many_geofences">Too many Geofences!</string>
     <string name="geofence_too_many_pending_intents">Too many pending Intents</string>
     <string name="unknown_geofence_error">Unknown Error :(</string>
+    <string name="geofence_entered">Entered In the Geofence</string>
+    <string name="geofence_exit">Leaving The place</string>
+    <string name="unknown_geofence_error_transition">Unknown Transition</string>
+    <string name="unknown_geofence_error_transition_type">invalid type</string>
+    <string name="geofence_transition_notification">NotificationGeofenceIntent</string>
+    <string name="not_conected">No conectado</string>
 </resources>
