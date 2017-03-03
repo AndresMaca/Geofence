@@ -5,11 +5,17 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.common.api.Status;
+
+public class MainActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks,OnConnectionFailedListener,ResultCallback<Status>{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,4 +55,36 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    /*
+    Override methods
+     */
+
+    @Override
+    public void onConnected(Bundle bundle) {
+
+    }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+
+    }
+
+    @Override
+    public void onConnectionFailed(ConnectionResult connectionResult) {
+
+    }
+
+    @Override
+    public void onResult(Status status) {
+
+    }
+
+    /*
+    My methods
+     */
+    public void addGeofencesButton(View view){//Geofences button Handler
+        Snackbar.make(view,"Hola",Snackbar.LENGTH_SHORT).show();
+    }
+
+
 }

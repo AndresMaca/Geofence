@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Geofence</string>
     <string name="action_settings">Settings</string>
+    <string name="add_geofences">Add Geofences</string>
+    <string name="geofence_not_available">Not avalaible</string>
+    <string name="geofence_too_many_geofences">Too many Geofences!</string>
+    <string name="geofence_too_many_pending_intents">Too many pending Intents</string>
+    <string name="unknown_geofence_error">Unknown Error :(</string>
 </resources>
